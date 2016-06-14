@@ -1,0 +1,78 @@
+<div class="care">
+<div class="lin">
+	<div class="dang"></div>
+	<span id="xin">关心</span>
+	<div class="fdj"></div>
+</div>
+	<div class="guanxi">
+		<div class="gong"></div>
+		<span class="zhen">正在关心</span>
+		<div class="zfx">
+			<i class="iconfont" id="five">&#xe635;</i>
+		</div>
+      <span id="zi">尚无关心，从下面挑选几个关心吧!</span>
+	</div>
+	<div class="zai" >
+			<div class="che" ng-repeat="v in guanxin" ng-if="v.state">
+				<div class="qi">
+					<div class="kao"></div>
+					<span id="dan">{{v.biao}}</span>
+					<p id="shi">{{v.neirong}}</p>
+					<a href="" ng-click="shanchu(v)"class="gx"><span class="ci">关心</span></a>
+				</div>
+			</div>
+	</div>
+	<div class="zai">
+		<div class="gong"></div>
+			<span class="zhen">可能关心</span>
+			<div class="che" ng-repeat="v in guanxin" ng-if="!v.state">
+				<div class="qi">
+					<img class="kao" src="{{v.touxiang}}">
+					<span id="dan">{{v.biao}}</span>
+					<p id="shi">{{v.neirong}}</p>
+					<a href="" ng-click="shanchu(v)"class="gx"><span class="ci">关心</span></a>
+				</div>
+			</div>
+	</div>
+<!-- 	<div class="che">
+			<div class="qi">
+				<div class="kao1"></div>
+				<span id="dan">升学考试</span>
+				<p id="shi">3.2万人关心</p>
+				<div class="gx"><span class="ci">关心</span></div>
+			</div>
+		</div>
+		<div class="che">
+			<div class="qi">
+				<div class="kao2"></div>
+				<span id="dan">手机</span>
+				<p id="shi">6.2万人关心</p>
+				<div class="gx"><span class="ci">关心</span></div>
+			</div>
+		</div>
+		<div class="che">
+			<div class="qi">
+				<div class="kao3"></div>
+				<span id="dan">奇葩</span>
+				<p id="shi">42.2万人关心</p>
+				<div class="gx"><span class="ci">关心</span></div>
+			</div>
+		</div>
+		<div class="che">
+			<div class="qi">
+				<div class="kao4"></div>
+				<span id="dan">科普</span>
+				<p id="shi">22万人关心</p>
+				<div class="gx"><span class="ci">关心</span></div>
+			</div>
+		</div>
+		<div class="che">
+			<div class="qi">
+				<div class="kao5"></div>
+				<span id="dan">杜</span>
+				<p id="shi">50.2万人关心</p>
+				<div class="gx"><span class="ci">关心</span></div>
+			</div>
+		</div>
+ -->
+</div>
